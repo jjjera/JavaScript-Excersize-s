@@ -1,0 +1,238 @@
+//Example for local variable :
+function scope(){
+    var localScope = ["use me"];
+    alert(localScope);
+}
+scope();
+
+//Example for global variable :
+var globalVar = "Here i am!";
+function localExample(){
+  var localVar = "There he is!";
+  console.log(globalVar);
+}
+localExample();
+
+//Example for string :
+function stringExample(){
+  var str="hai , \"this is\" for \"double\" quates";
+  console.log(str);
+}
+stringExample();
+
+//Example for string methods
+//.length
+function textLength(){
+var n = document.getElementById('para"-"graph').innerHTML.length;
+console.log("n is" + n);
+var nLenghth = n.length;
+alert(nLength);
+}
+textLength();
+
+//example for string method .lastIndexOf();
+ function findLast(){
+   var str = "Find out the last word!";
+   var last = str.lastIndexOf();
+ }
+
+ // indexOf and lastIndexOf are showing the same index value of the string , so what is the use of IndexOf();
+ function findLast(){
+   var str = "Find out the 'last' word!";
+   var last = str.indexOf('last');
+   document.getElementById('container').innerHTML = last ;
+ }
+ findLast()
+
+// example for string method slice();
+function textLength(){
+  var str = "apple, orange, mango";
+  var get = str.slice(7,13);
+  document.getElementById('container').innerHTML = get;
+  alert(get);
+}
+textLength();
+
+// example for a string method to replace the string using .replace()
+function textLength(){
+  var str = "where are we going ?";
+  var get = str.replace("we","you");
+  document.getElementById('container').innerHTML = get;
+  alert(get);
+}
+textLength();
+
+// string method to change string upper case and lowe case
+function textLength(){
+  var str = "where are we going ?";
+  var get = str.toUpperCase();
+  document.getElementById('container').innerHTML = get;
+  alert(get);
+}
+textLength();
+
+//  to reverse string
+function string(str){
+    return str.split("").reverse().join("");
+}
+
+// to get the current page contents
+function getData(){
+    var data = window.print();
+    console.log(data);
+}
+getData();
+
+//to get current date and setTimeout(function ()
+function getDate(){
+  var time = new Date();
+  console.log(time);
+}
+getDate();
+
+//JavaScript program to get the current date.
+function currentTime(){
+  var t = new Date();
+  document.write(t);
+}
+currentTime();
+
+//JavaScript program to get the current time.
+funnction getTime(){
+  var time = new Date();
+  var get = time.getTime();
+  document.write(time);
+}
+getTime();
+
+// get date and time in (dd-mm-yy h:m:ss)// syntax => Date().toLocaleString("em-GB");
+function getTime(){
+  var date = new Date().toLocaleString("em-GB");
+  console.log(date);
+}
+getTime();
+
+//string concatenation
+function concate (){
+  var str = "I am  ";
+  console.log(str+"the boss");
+}
+concate();
+
+//split string :
+function splitValue(){
+  var str = "this is the string value";
+  var str1 = str.split("");
+  document.getElementById('container').innerHTML = str1;
+}
+splitValue();
+t,h,i,s, ,i,s, ,t,h,e, ,s,t,r,i,n,g, ,v,a,l,u,e
+
+//concatenation of two string :
+function addString(){
+  var str = "concatenated value is: ";
+  document.getElementById('container').innerHTML = str;
+  document.write(str+"plus this text");
+}
+addString();
+this is the string value, plus this text
+
+//concatenation of string plus number:
+function addString(){
+  var str = "concatenated value is: ";
+  document.getElementById('container').innerHTML = str;
+  document.write(str+10);
+}
+addString();
+concatenated value is: 10
+
+//concatenation of string plus floating:
+function addString(){
+  var str = "concatenated value is: ";
+  document.getElementById('container').innerHTML = str;
+  document.write(str+5.06);
+}
+addString();
+concatenated value is: 5.06
+
+//concatenation of string plus and numbers:
+function addString(){
+  var str = "My name is: ";
+  document.getElementById('container').innerHTML = str;
+  document.write(str+"Jerald"+"Age = 24");
+}
+addString();
+My name is: Jerald Age = 24
+
+//convert string to lower and upper case:
+function addString(){
+  var str = "Here i have got changed!!";
+  var st = str.toLowerCase();
+  document.getElementById('container').innerHTML = st;
+  document.write(st);
+}
+addString();
+here i have got changed!!
+
+//toUpperCase:
+function addString(){
+  var str = "Here i have got changed!!";
+  var st = str.toUpperCase();
+  document.getElementById('container').innerHTML = st;
+  document.write(st);
+}
+addString();
+HERE I HAVE GOT CHANGED!!
+
+//Numbers:
+//adding a number with string:
+var a = "10";
+var b = 10;
+var res = a+b;
+res = "1010"
+
+//adding a number with decimal or float:
+var a = 10;
+var b = 1.5;
+var res = a+b;
+res = 11.5;
+
+//adding a number with boolean text/string:
+var a = 10;
+var b = false;
+var res = a+b;
+res = 10;
+
+var a = 10;
+var b = "false";
+var res = a+b;
+res = "10false";
+
+//null and undefined:
+var num; (or) var num = undefined;
+
+var num = null;
+var store = {rack:"one", row:"left", coloumn:"right"};
+rack:"null";
+
+//displaying values in two and three decimal places:
+var a = 10;
+var b = 1.610;
+var res = a+b;
+res = 11.61;
+
+var a = 10;
+var b = 1.699;
+var res = a+b;
+res = 11.699;
+
+ //rounding the numbers using Math.round();
+ function roundingNum(){
+   var a = Math.round(1.6);
+   return a;
+ }
+ roundingNum(); ==> 2;
+
+ //NaN(Not a Number) when we try to subtract/multiply/divide a number with string the output will be NaN:
+ var a = 10/"hai";
+ a; ==> NaN
